@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculadora de Ingresos y Egresos</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1>Calculadora de Ingresos y Egresos</h1>
+  
+  <div id="calculator">
+    <h2>Ingresos</h2>
+    <input type="date" id="incomeDate" placeholder="Fecha">
+    <input type="text" id="incomeDescription" placeholder="Descripción">
+    <input type="number" id="incomeAmount" placeholder="Monto">
+    <button onclick="addIncome()">Agregar Ingreso</button>
+    <table id="incomeTable">
+      <tr>
+        <th>Fecha</th>
+        <th>Descripción</th>
+        <th>Monto</th>
+      </tr>
+    </table>
+
+    <h2>Egresos</h2>
+    <input type="date" id="expenseDate" placeholder="Fecha">
+    <input type="text" id="expenseDescription" placeholder="Descripción">
+    <input type="number" id="expenseAmount" placeholder="Monto">
+    <button onclick="addExpense()">Agregar Egreso</button>
+    <table id="expenseTable">
+      <tr>
+        <th>Fecha</th>
+        <th>Descripción</th>
+        <th>Monto</th>
+      </tr>
+    </table>
+    
+    <button onclick="calculate()">Calcular</button>
+    <p id="result"></p>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
